@@ -3,7 +3,7 @@ function submitEvenHandler(evento) {// se ejecuta cuando se haga el submit
   sessionStorage.setItem('logueado', 'true');
   var usuarioLOG = document.getElementById("nombre_usuario");
   localStorage.setItem("nombre_usuario",usuarioLOG.value);
-  window.location.href = 'index.html';// redirige al index.html
+  window.location.href = 'https://nicc20.github.io/E-commerce/';// redirige al index.html
   return true; //hace que al final la información se envíe al servidor
 
 }
@@ -24,5 +24,4 @@ document.getElementById("loginFORM").addEventListener('submit', submitEvenHandle
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
 
-});
 });
