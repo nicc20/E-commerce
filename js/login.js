@@ -1,11 +1,15 @@
-function submitEvenHandler(evento) {// se ejecuta cuando se haga el submit
-  evento.preventDefault();// evita qe se haga la petición al servidor enviando los datos
-  sessionStorage.setItem('logueado', 'true');
-  var usuarioLOG = document.getElementById("nombre_usuario");
-  localStorage.setItem("nombre_usuario",usuarioLOG.value);
-  window.location.href = 'https://nicc20.github.io/E-commerce/';// redirige al index.html
-  return true; //hace que al final la información se envíe al servidor
 
+function login() {
+
+ 
+  
+  let usuario = document.getElementById('nombre_usuario').value;
+  let contraseña = document.getElementById('password').value;
+
+  if ((usuario.length > 0) && (contraseña.length > 0)) {
+   window.location="index.html";
+  }
+  
 }
 
 
@@ -13,15 +17,3 @@ function submitEvenHandler(evento) {// se ejecuta cuando se haga el submit
 
 
 
-document.getElementById("loginFORM").addEventListener('submit', submitEvenHandler);
-//agrega el evento para cuandos se haga el submit
-
-
-
-
-//Función que se ejecuta una vez que se haya lanzado el evento de
-//que el documento se encuentra cargado, es decir, se encuentran todos los
-//elementos HTML presentes.
-document.addEventListener("DOMContentLoaded", function(e){
-
-});
