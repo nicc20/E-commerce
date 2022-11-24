@@ -188,3 +188,25 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.container .titlecart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.container #fotoVentas {
+  max-width: 100px
+}
+
+.container .checkbox {
+  margin: 2px;
+}
+
+.container #dirEnvio {
+  display: flex;
+  justify-content: space-around;
+}

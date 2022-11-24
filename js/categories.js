@@ -140,4 +140,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
         showCategoriesList();
     });
+    const nombre = document.getElementById("perfil");
+    nombre.innerHTML = localStorage.getItem("text");
 });
+    

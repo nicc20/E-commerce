@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
   <title>eMercado - Todo lo que busques está aquí</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
-
 <body class="text-center">
-  <h2>Bienvenido a E-Mercado</h2>
-      <p>Por favor ingresa tu usuario para continuar</p>
-      <hr>
-      <form action="">
-        <input type="text" placeholder="USUARIO" name="usuario" id="nombre_usuario" minlength="6" required><br><br>
-        <input type="password" placeholder="CONTRASEÑA" name="password" id="password" minlength="6" required><br><br>
-        <input type="button"  value="Ingresar" id="boton" onclick="login()">
-        
-      </form>
-    </div>
+
+  <h4 class="alert-heading">Bienvenido a E-MERCADO</h4>
+
+  <p>Por favor ingresa tu usuario para continuar</p>
+
+  <hr>
+
+  <form action="" method="POST" id="loginFORM">
+    
+    <p class="mb-0">Inicio de sesión</p><br>
+    
+    <input type="email" placeholder="Email" id="usuario" required><br><br>
+    
+    <input type="password" placeholder="Contraseña" id="contraseña" minlength="6" required><br><br>
+    
+    <button type="submit" id="regBtn">Ingresar</button>
+  
+  </form>
+
   
   <script src="js/login.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
+
 </html>
-  

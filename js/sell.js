@@ -146,4 +146,6 @@ document.addEventListener("DOMContentLoaded", function(e){
             });
         }
     });
+    const nombre = document.getElementById("perfil");
+    nombre.innerHTML = localStorage.getItem("text");
 });
